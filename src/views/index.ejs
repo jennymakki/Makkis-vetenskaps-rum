@@ -5,33 +5,41 @@
   <%- include('components/header') %>
     <div class="Intro">
       <h2 class="Intro__h2">Välkommen till Fares Labratorium!</h2>
+      <br>
       <p class="Intro__p">
         Här kan du utforska lektionsmaterial, experiment och vetenskapens under.
       </p>
     </div>
 
+    <div class="MainContent">
     <div class="Subjects">
-      <h2 class="Subjects__h2"></h2>
+      <h2 class="Subjects__h2">Ämnen</h2>
       <button
         class="Subjects__naturkunskap"
         onClick="location.href='/naturkunskap'"
       >
         Naturkunskap
+        <i class="Subjects__naturkunskapIcon" data-lucide="leaf"></i>
       </button>
       <button class="Subjects__biologi" onClick="location.href='/biologi'">
         Biologi
+        <i class="Subjects__biologiIcon" data-lucide="dna"></i>
       </button>
       <button class="Subjects__kemi" onClick="location.href='/kemi'">
         Kemi
+        <i class="Subjects__kemiIcon" data-lucide="flask-conical"></i>
       </button>
-      <button class="Subjects__natur.spec" onClick="location.href='/naturvetenskapligspecialisering'">
+      <button class="Subjects__naturspec" onClick="location.href='/naturvetenskapligspecialisering'">
         Naturvetenskaplig Specialisering
+        <i class="Subjects__naturspecIcon" data-lucide="atom"></i>
       </button>
     </div>
 
 <div class="About">
     <h3 class="about__h3">Om mig</h3>
-    <p class="about__p">Lorem ipsum text</p>
+    <img src="/images/Fares.png" alt="Fares">    
+    <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. </p>
+</div>
 </div>
 
     <%- include('components/footer') %>

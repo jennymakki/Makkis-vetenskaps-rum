@@ -13,6 +13,10 @@ header {
     color: #F2F2F2;
     padding: 3rem 0 3rem 0;
 }
+.MainContent {
+  display: flex;
+  flex-direction: column;
+}
 
 .header__div {
     position: relative;
@@ -31,7 +35,7 @@ header {
     font-size: 1.5rem;
   }
 
-  
+
   .header__icon-link:hover {
     opacity: 0.7;
     cursor: pointer;
@@ -39,11 +43,103 @@ header {
 
   .Intro {
     background-color: #3B5D4A;
-    margin: 2rem;
+    margin: 2rem auto;
     color: #f2f2f2;
-    padding: 2rem;
+    padding: 2rem 1rem 2rem 1rem;
     text-align: center;
-    
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(97, 97, 97, 0.8);
+    max-width: 600px;
+    width: 80%
+  }
+
+  .Intro__h2 {
+    font-size: 1.3rem;
+  }
+
+  .Intro__p {
+    font-size: 0.9rem;
+  }
+
+  .Subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 3rem 0 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Subjects__h2 {
+    color:#333333;
+    text-align: center;
+  }
+
+  .Subjects__naturkunskap,
+  .Subjects__biologi,
+  .Subjects__kemi,
+  .Subjects__naturspec {
+    color:#333333;
+    font-size: 1.4rem;
+    padding: 0.75rem;
+    max-width: 17rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(97, 97, 97, 0.4);
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .Subjects__naturkunskap {
+    background-color: #4CAF50;
+  }
+
+  .Subjects__biologi {
+    background-color: #42A5F5;
+  }
+
+  .Subjects__kemi {
+    background-color: #FF6F3C;
+  }
+
+  .Subjects__naturspec {
+    background-color: #EDE623;
+  }
+
+  .About {
+    margin: 2rem;
+  }
+  
+  .About img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 16px rgba(97, 97, 97, 0.8);
+  }
+
+  
+  .about__h3 {
+    color:#333333;
+    text-align: center;
+    margin: 1.8rem;
+    font-size: 1.5rem;
+
+  }
+  
+  .about__p {
+    background-color: #3B5D4A;
+    border-radius: 10px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(97, 97, 97, 0.8);
+    margin-bottom: 2rem;
   }
 
 footer {
@@ -52,3 +148,39 @@ footer {
     padding: 3rem;
 }
 
+@media (min-width: 900px) {
+    .MainContent {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .Subjects,
+    .About {
+      flex: 1 1 0;
+      max-width: 350px;
+      margin: 0;
+    }
+  
+    .About {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about__h3 {
+        margin: 0 0 1rem 0;
+    }
+  
+    .About img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      align-self: center;
+    }
+
+    .header__icon {
+        margin-right: 5rem;
+      }
+  }
+  
