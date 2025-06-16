@@ -238,7 +238,7 @@ footer {
   
   .lesson-card {
     background-color: #4CAF50;
-    color: #f2f2f2;
+    color: #333333;
     padding: 2rem 1.5rem;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(97, 97, 97, 0.4);
@@ -251,13 +251,13 @@ footer {
   .lesson-card__title {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    color: #f2f2f2;
+    color: #333333;
   }
   
   .lesson-card__icon {
     width: 40px;
     height: 40px;
-    stroke: #f2f2f2;
+    stroke: #333333;
   }
 
   .kemi__lesson-card__file-list {
@@ -272,8 +272,8 @@ footer {
   
   .kemi__lesson-card__file-list a {
     text-decoration: none;
-    color: #f2f2f2;
-    background-color: #FF6F3C;
+    color: #333333;
+    background-color: #f2f2f2;
     padding: 0.5rem 0.75rem;
     border-radius: 8px;
     display: inline-flex;
@@ -285,7 +285,7 @@ footer {
   }
   
   .kemi__lesson-card__file-list a:hover {
-    background-color: #ff854f;
+    background-color: #d2d0d0;
     transform: translateY(-2px);
   }
   
@@ -307,8 +307,8 @@ footer {
   
   .naturkunskap__lesson-card__file-list a {
     text-decoration: none;
-    color: #f2f2f2;
-    background-color: #4CAF50;
+    color: #333333;
+    background-color: #f2f2f2;
     padding: 0.5rem 0.75rem;
     border-radius: 8px;
     display: inline-flex;
@@ -320,7 +320,7 @@ footer {
   }
   
   .naturkunskap__lesson-card__file-list a:hover {
-    background-color: #4CAF50;
+    background-color: #d2d0d0;
     transform: translateY(-2px);
   }
   
