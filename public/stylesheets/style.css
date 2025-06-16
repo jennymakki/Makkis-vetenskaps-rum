@@ -330,11 +330,24 @@ footer {
     height: 20px;
   }
 
+  .naturkunskap1b__h2,
+  .kemi1__h2 {
+    font-size: 2rem;
+    color: #333333;
+  }
+
 @media (min-width: 900px) {
     .MainContent {
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
+    }
+
+    .Subjects__naturkunskap,
+    .Subjects__biologi,
+    .Subjects__kemi,
+    .Subjects__naturspec { 
+        margin: 0.6rem 0 0.6rem 0;
     }
   
     .Subjects,
