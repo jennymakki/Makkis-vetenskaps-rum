@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Naturkunskap</title>
-</head>
+    <%- include('components/head', { title: 'Fares Labratorium' }) %>
 <body>
+    <%- include('components/header') %>
   <h1>Naturkunskap!</h1>
   <p>Kurserna i naturkunskap</p>
   <a href="/">Tillbaka</a>
+  <%- include('components/footer') %>
+  <script src="/javascripts/main.js"></script>
+  <script>
+lucide.createIcons();
+</script>
 </body>
 </html>
