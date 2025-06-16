@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('components/head', { title: 'Fares Labratorium' }) %>
+  <body>
+    <%- include('components/header') %>
+
+    <div class="naturkunskap1b__div">
+        <div class="lesson-card">
+          <h2 class="lesson-card__title">Ekologi</h2>
+          <i data-lucide="leaf" class="lesson-card__icon"></i>
+          <ul class="naturkunskap__lesson-card__file-list">
+            <li>
+              <a href="/downloads..." download>
+                <i data-lucide="file-text"></i> Introduktion PDF
+              </a>
+            </li>
+            <li>
+              <a href="/downloads..." download>
+                <i data-lucide="file-text"></i> Övningar PDF
+              </a>
+            </li>
+            <li>
+              <a href="/downloads..." download>
+                <i data-lucide="file-cog"></i> Föreläsning PowerPoint
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="lesson-card">
+          <h2 class="lesson-card__title">Hållbar Utveckling & Energi</h2>
+          <i data-lucide="sun" class="lesson-card__icon"></i>
+        </div>
+      
+        <div class="lesson-card">
+          <h2 class="lesson-card__title">Hälsa och Livsstil</h2>
+          <i data-lucide="heart-pulse" class="lesson-card__icon"></i>
+        </div>
+      
+        <div class="lesson-card">
+          <h2 class="lesson-card__title">Normer, Relationer & Sex</h2>
+          <i data-lucide="users" class="lesson-card__icon"></i>
+        </div>
+      
+        <div class="lesson-card">
+          <h2 class="lesson-card__title">Genetik</h2>
+          <i data-lucide="dna" class="lesson-card__icon"></i>
+        </div>
+      
+        <div class="lesson-card">
+          <h2 class="lesson-card__title">Genteknik</h2>
+          <i data-lucide="test-tube" class="lesson-card__icon"></i>
+        </div>
+      
+        <button class="Back" onClick="location.href='/'">Tillbaka</button>
+      </div>
+
+    <%- include('components/footer') %>
+    <script src="/javascripts/main.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

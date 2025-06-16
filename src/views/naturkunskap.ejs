@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('components/head', { title: 'Fares Labratorium' }) %>
-<body>
+  <%- include('components/head', { title: 'Fares Labratorium' }) %>
+  <body>
     <%- include('components/header') %>
-  <h1>Naturkunskap!</h1>
-  <p>Kurserna i naturkunskap</p>
-  <a href="/">Tillbaka</a>
-  <%- include('components/footer') %>
-  <script src="/javascripts/main.js"></script>
-  <script>
-lucide.createIcons();
-</script>
-</body>
+
+    <div class="Naturkunskap">
+      <h2 class="Naturkunskap__h2">Kurser i Naturkunskap</h2>
+
+      <button class="Subjects__naturkunskap" onClick="location.href='/naturkunskap1a1'">
+        Naturkunskap 1a1
+        <i class="Subjects__naturkunskapIcon" data-lucide="leaf"></i>
+      </button>
+
+      <button class="Subjects__naturkunskap" onClick="location.href='/naturkunskap1b'">
+        Naturkunskap 1b
+        <i class="Subjects__naturkunskapIcon" data-lucide="leaf"></i>
+      </button>
+
+      <button class="Subjects__naturkunskap" onClick="location.href='/naturkunskap2'">
+        Naturkunskap 2
+        <i class="Subjects__naturkunskapIcon" data-lucide="leaf"></i>
+      </button>
+
+      <button class="Back" onClick="location.href='/'">Tillbaka</button>
+    </div>
+
+    <%- include('components/footer') %>
+    <script src="/javascripts/main.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>

@@ -3,9 +3,23 @@
     <%- include('components/head', { title: 'Fares Labratorium' }) %>
 <body>
     <%- include('components/header') %>
-  <h2>Biologi!</h1>
-  <p>Kurserna i biologi</p>
-  <a href="/">Tillbaka</a>
+
+    <div class="Biologi">
+      <h2 class="Biologi__h2">Kurser i Biologi</h2>
+
+      <button class="Subjects__biologi" onClick="location.href='/biologi1'">
+        Biologi 1
+        <i class="Subjects__biologiIcon" data-lucide="dna"></i>
+      </button>
+
+      <button class="Subjects__biologi" onClick="location.href='/biologi2'">
+        Biologi 2
+        <i class="Subjects__biologiIcon" data-lucide="dna"></i>
+      </button>
+
+      <button class="Back" onClick="location.href='/'">Tillbaka</button>
+    </div>
+
   <%- include('components/footer') %>
   <script src="/javascripts/main.js"></script>
   <script>

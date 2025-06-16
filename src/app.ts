@@ -31,6 +31,34 @@ app.get('/naturvetenskapligspecialisering', (req, res) => {
     res.render('naturvetenskapligspecialisering');
 });
 
+app.get('/kemi2', (req, res) => {
+    res.render('kemi2');
+});
+
+app.get('/biologi1', (req, res) => {
+    res.render('biologi1');
+});
+
+app.get('/biologi2', (req, res) => {
+    res.render('biologi2');
+});
+
+app.get('/naturkunskap1a1', (req, res) => {
+    res.render('naturkunskap1a1');
+});
+
+app.get('/naturkunskap2', (req, res) => {
+    res.render('naturkunskap2');
+});
+
+app.get('/naturkunskap1b', (req, res) => {
+    res.render('naturkunskap1b');
+});
+
+app.get('/kemi1', (req, res) => {
+    res.render('kemi1');
+});
+
 const port = 3000;
 
 app.listen(port, () => {

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('components/head', { title: 'Fares Labratorium' }) %>
+  <body>
+    <%- include('components/header') %>
+
+    <div class="kemi1__div">
+      <div class="lesson-card--kemi">
+        <h2 class="lesson-card__title">Kemiska Bindningar</h2>
+        <i data-lucide="atom" class="lesson-card__icon"></i>
+
+        <ul class="kemi__lesson-card__file-list">
+            <li>
+              <a href="/downloads/kemi1/kemiska-bindningar-intro.pdf" download>
+                <i data-lucide="file-text"></i> Introduktion PDF
+              </a>
+            </li>
+            <li>
+              <a href="/downloads/kemi1/kemiska-bindningar-övningar.pdf" download>
+                <i data-lucide="file-text"></i> Övningar PDF
+              </a>
+            </li>
+            <li>
+              <a href="/downloads/kemi1/kemiska-bindningar.pptx" download>
+                <i data-lucide="file-cog"></i> Föreläsning PowerPoint
+              </a>
+            </li>
+          </ul>
+      </div>
+
+      <div class="lesson-card--kemi">
+        <h2 class="lesson-card__title">Kemiska Beräkningar</h2>
+        <i data-lucide="calculator" class="lesson-card__icon"></i>
+      </div>
+
+      <div class="lesson-card--kemi">
+        <h2 class="lesson-card__title">Syror och Baser</h2>
+        <i data-lucide="droplet" class="lesson-card__icon"></i>
+      </div>
+
+      <div class="lesson-card--kemi">
+        <h2 class="lesson-card__title">Vetenskapligt Arbetssätt</h2>
+        <i data-lucide="microscope" class="lesson-card__icon"></i>
+      </div>
+
+      <div class="lesson-card--kemi">
+        <h2 class="lesson-card__title">Termokemi</h2>
+        <i data-lucide="flame" class="lesson-card__icon"></i>
+      </div>
+
+      <div class="lesson-card--kemi">
+        <h2 class="lesson-card__title">Gaser</h2>
+        <i data-lucide="wind" class="lesson-card__icon"></i>
+      </div>
+
+      <div class="lesson-card--kemi">
+        <h2 class="lesson-card__title">Elektrokemi</h2>
+        <i data-lucide="zap" class="lesson-card__icon"></i>
+      </div>
+
+      <button class="Back" onClick="location.href='/'">Tillbaka</button>
+    </div>
+
+    <%- include('components/footer') %>
+    <script src="/javascripts/main.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -3,9 +3,25 @@
     <%- include('components/head', { title: 'Fares Labratorium' }) %>
 <body>
     <%- include('components/header') %>
-  <h1>Kemi!</h1>
-  <p>Kurserna i Kemi</p>
-  <a href="/">Tillbaka</a>
+
+
+<div class="Kemi">
+      <h2 class="Kemi__h2">Kurser i Kemi</h2>
+
+      <button class="Subjects__kemi" onClick="location.href='/kemi1'">
+        Kemi 1
+        <i class="Subjects__kemiIcon" data-lucide="flask-conical"></i>
+      </button>
+
+      <button class="Subjects__kemi" onClick="location.href='/kemi2'">
+        Kemi 2
+        <i class="Subjects__kemiIcon" data-lucide="flask-conical"></i>
+      </button>
+
+      <button class="Back" onClick="location.href='/'">Tillbaka</button>
+    </div>
+
+
   <%- include('components/footer') %>
   <script src="/javascripts/main.js"></script>
   <script>
