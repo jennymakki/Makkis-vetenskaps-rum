@@ -16,7 +16,19 @@ app.get('/', (_req, res) => {
 
 app.get('/naturkunskap', (req, res) => {
     res.render('naturkunskap');
-})
+});
+
+app.get('/biologi', (req, res) => {
+    res.render('biologi');
+});
+
+app.get('/kemi', (req, res) => {
+    res.render('kemi');
+});
+
+app.get('/naturvetenskapligspecialisering', (req, res) => {
+    res.render('naturvetenskapligspecialisering');
+});
 
 const port = 3000;
 

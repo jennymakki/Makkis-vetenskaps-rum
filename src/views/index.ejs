@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fares Labratorium</title>
-  <!-- Link your CSS here, for example: -->
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-</head>
-<body>
-  <h1>Välkommen till Fares Labratorium!</h1>
-  <button onClick="location.href='/naturkunskap'">Naturkunskap</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fares Labratorium</title>
+    <link
+      rel="stylesheet"
+      href="/stylesheets/style.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <%- include('components/header') %>
+  <body>
+    <div class="Intro">
+      <h2 class="Intro__h2">Välkommen till Fares Labratorium!</h2>
+      <p class="Intro__p">
+        Här kan du utforska lektionsmaterial, experiment och vetenskapens under.
+      </p>
+    </div>
 
-  <!-- Your scripts if any -->
-  <script src="/javascripts/main.js"></script>
-</body>
+    <div class="Subjects">
+      <h2 class="Subjects__h2"></h2>
+      <button
+        class="Subjects__naturkunskap"
+        onClick="location.href='/naturkunskap'"
+      >
+        Naturkunskap
+      </button>
+      <button class="Subjects__biologi" onClick="location.href='/biologi'">
+        Biologi
+      </button>
+      <button class="Subjects__kemi" onClick="location.href='/kemi'">
+        Kemi
+      </button>
+      <button class="Subjects__natur.spec" onClick="location.href='/naturvetenskapligspecialisering'">
+        Naturvetenskaplig Specialisering
+      </button>
+    </div>
+
+<div class="About">
+    <h3 class="about__h3">Om mig</h3>
+    <p class="about__p">Lorem ipsum text</p>
+</div>
+
+    <%- include('components/footer') %>
+    <script src="/javascripts/main.js"></script>
+  </body>
 </html>
