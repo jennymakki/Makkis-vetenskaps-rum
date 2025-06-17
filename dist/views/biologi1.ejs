@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('components/head', { title: 'Fares Labratorium' }) %>
+<body>
+    <%- include('components/header') %>
+
+    <div class="ComingSoon">
+      <div class="ComingSoon_div">
+      <h2 class="ComingSoon__h2">Kommer snart...</h2>
+      <i class="ComingSoon__icon" data-lucide="wrench"></i>
+    </div>
+      <button class="Back" onClick="location.href='/'">Tillbaka</button>
+    </div>
+
+  <%- include('components/footer') %>
+  <script src="/javascripts/main.js"></script>
+  <script>
+lucide.createIcons();
+</script>
+</body>
+</html>
