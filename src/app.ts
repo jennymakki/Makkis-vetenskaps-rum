@@ -12,51 +12,51 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
 app.get('/', (_req, res) => {
-    res.render('index');
+    res.render('index', { title: 'Makkis vetenskapsrum' });
 });
 
 app.get('/naturkunskap', (req, res) => {
-    res.render('naturkunskap');
+    res.render('naturkunskap', { title: 'Naturkunskap - Makkis vetenskapsrum' });
 });
 
 app.get('/biologi', (req, res) => {
-    res.render('biologi');
+    res.render('biologi', {title: 'Biologi - Makkis vetenskapsrum' });
 });
 
 app.get('/kemi', (req, res) => {
-    res.render('kemi');
+    res.render('kemi', { title: 'Kemi - Makkis vetenskapsrum' });
 });
 
 app.get('/naturvetenskapligspecialisering', (req, res) => {
-    res.render('naturvetenskapligspecialisering');
+    res.render('naturvetenskapligspecialisering', { title: 'Naturvetenskaplig Specialisering - Makkis vetenskapsrum' });
 });
 
 app.get('/kemi2', (req, res) => {
-    res.render('kemi2');
+    res.render('kemi2', { title: 'Kemi 2 - Makkis vetenskapsrum' });
 });
 
 app.get('/biologi1', (req, res) => {
-    res.render('biologi1');
+    res.render('biologi1', { title: 'Biologi 1 - Makkis vetenskapsrum' });
 });
 
 app.get('/biologi2', (req, res) => {
-    res.render('biologi2');
+    res.render('biologi2', { title: 'Biologi 2 - Makkis vetenskapsrum' });
 });
 
 app.get('/naturkunskap1a1', (req, res) => {
-    res.render('naturkunskap1a1');
+    res.render('naturkunskap1a1', { title: 'Naturkunskap 1a1 - Makkis vetenskapsrum' });
 });
 
 app.get('/naturkunskap2', (req, res) => {
-    res.render('naturkunskap2');
+    res.render('naturkunskap2' , { title: 'Naturkunskap 2 - Makkis vetenskapsrum' });
 });
 
 app.get('/naturkunskap1b', (req, res) => {
-    res.render('naturkunskap1b');
+    res.render('naturkunskap1b', { title: 'Naturkunskap 1b - Makkis vetenskapsrum' });
 });
 
 app.get('/kemi1', (req, res) => {
-    res.render('kemi1');
+    res.render('kemi1' , { title: 'Kemi 1 - Makkis vetenskapsrum' });
 });
 
 const port = 3000;
