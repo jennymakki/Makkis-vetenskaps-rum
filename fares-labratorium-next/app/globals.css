@@ -1,7 +1,7 @@
+@import "tailwindcss";
+
 * {
     font-family: 'poppins', sans-serif; 
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -11,39 +11,6 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
-header {
-    background-color: #3B5D4A;
-    color: #F2F2F2;
-    padding: 3rem 0 3rem 0;
-}
-.MainContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.header__div {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-.header__icon {
-    position: absolute;
-    right: 1rem;
-    color: #F2F2F2;
-    margin-top: 0.3rem;
-  }
-
-  .header__h1 {
-    font-size: 1.5rem;
-  }
-
-
-  .header__icon-link:hover {
-    opacity: 0.7;
-    cursor: pointer;
-  }
 
   .Intro {
     background-color: #3B5D4A;
@@ -379,9 +346,6 @@ footer {
       align-self: center;
     }
 
-    .header__icon {
-        margin-right: 5rem;
-      }
   }
   
 
