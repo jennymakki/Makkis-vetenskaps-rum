@@ -6,6 +6,7 @@ import "./globals.css";
 import Header from "./components/Header";
 
 import Footer from "./components/Footer";
+import FloatingScienceBg from "./components/FloatingScienceBg";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -54,6 +55,7 @@ export default function RootLayout({
       >
         {" "}
         <Header />
+        <FloatingScienceBg/>
         {children}
         <Footer />
       </body>
