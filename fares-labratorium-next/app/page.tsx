@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Atom, Dna, FlaskConical, Leaf } from "lucide-react";
+import { Dna, FlaskConical, Leaf } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -48,16 +48,6 @@ export default function HomePage() {
           >
             <span className="text-xl font-light">Kemi</span>
             <FlaskConical className="group-hover:scale-110 transition" />
-          </Link>
-
-          <Link
-            href="/natspec"
-            className="group bg-gradient-to-r from-yellow-500 to-yellow-400 text-black rounded-xl shadow-md p-6 flex justify-between items-center hover:shadow-xl hover:-translate-y-1 transition"
-          >
-            <span className="text-xl font-light">
-              Naturvetenskaplig Specialisering
-            </span>
-            <Atom className="group-hover:scale-110 transition" />
           </Link>
         </div>
       </section>
