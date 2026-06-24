@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Dna, FlaskConical, Leaf } from "lucide-react";
+import FloatingScienceBg from "./components/FloatingScienceBg";
 
 export default function HomePage() {
   return (
     <main className="max-w-2xl items-center mx-auto px-6 py-12">
+      <FloatingScienceBg/>
       <section className="max-w-3xl mx-auto bg-gradient-to-r from-[#203A2B] to-[#2F4F3E] text-white rounded-2xl shadow-xl p-10 py-15 text-center mb-20">
         <h2 className="text-4xl font-extralight text-[#f3f3f3] mb-4">Välkommen!</h2>
 
