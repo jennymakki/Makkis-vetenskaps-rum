@@ -416,3 +416,12 @@ footer {
     stroke: #3B5D4A;
   }
 
+/* Theme colors */
+
+.theme-kemi {
+  border-left: 6px solid #FF6F3C;
+}
+
+.theme-kemi .lesson-card__icon {
+  color: #FF6F3C;
+}
