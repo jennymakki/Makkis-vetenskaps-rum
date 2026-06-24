@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Leaf } from "lucide-react";
+import BackButton from "../components/BackButton";
 
 export const metadata = {
   title: "Naturkunskap - Makkis Vetenskapsrum",
@@ -7,27 +8,32 @@ export const metadata = {
 
 export default function NaturkunskapPage() {
   return (
-    <div className="Naturkunskap">
-      <h2 className="Naturkunskap__h2">Kurser i Kemi</h2>
+    <main className="max-w-3xl mx-auto px-6 py-12 space-y-10">
+      <section className="text-center">
+        <h2 className="text-4xl font-light text-[#f3f3f3]">Naturkunskap</h2>
+        <p className="text-[#f3f3f3] mt-2">Välj en kurs nedan</p>
+      </section>
 
-          <Link href="/naturkunskap1a1" className="Subjects__naturkunskap">
-        Naturkunskap 1a1
-        <Leaf className="Subjects__naturkunskapIcon" />
-      </Link>
+      <section className="grid gap-5">
 
-      <Link href="/naturkunskap1b" className="Subjects__naturkunskap">
-        Naturkunskap 1b
-        <Leaf className="Subjects__kemiIcon" />
-      </Link>
+        <Link
+          href="/naturkunskap1b"
+          className="group bg-gradient-to-r from-green-600 to-green-500 text-white rounded-xl shadow-md p-6 flex justify-between items-center hover:shadow-xl hover:-translate-y-1 transition"
+        >
+          <span className="text-xl font-light">Naturkunskap 1b</span>
+          <Leaf className="group-hover:scale-110 transition" />
+        </Link>
 
-      <Link href="/naturkunskap2" className="Subjects__naturkunskap">
-        Naturkunskap 2
-        <Leaf className="Subjects__naturkunskapIcon" />
-      </Link>
+        <Link
+          href="/naturkunskap2"
+          className="group bg-gradient-to-r from-green-600 to-green-500 text-white rounded-xl shadow-md p-6 flex justify-between items-center hover:shadow-xl hover:-translate-y-1 transition"
+        >
+          <span className="text-xl font-light">Naturkunskap 2</span>
+          <Leaf className="group-hover:scale-110 transition" />
+        </Link>
+      </section>
 
-      <Link href="/" className="Back">
-        Tillbaka
-      </Link>
-    </div>
+      <BackButton/>
+    </main>
   );
 }

@@ -1,28 +1,20 @@
 "use client";
 
 import { Wrench } from "lucide-react";
-import Link from "next/link";
+import BackButton from "./BackButton";
 
-type ComingSoonProps = {
-  backHref?: string;
-  title?: string;
-};
-
-export default function ComingSoon({
-  backHref = "/",
-  title = "Kommer snart...",
-}: ComingSoonProps) {
+export default function ComingSoon() {
   return (
-    <div className="ComingSoon">
-      <div className="ComingSoon_div">
-        <h2 className="ComingSoon__h2">{title}</h2>
+    <main className="max-w-3xl mx-auto px-6 py-20 space-y-10 text-center">
+      <section className="bg-white rounded-2xl shadow-lg p-10 border border-gray-100">
+        <h2 className="text-3xl font-light text-[#203A2B] mb-6">
+          Kommer snart...
+        </h2>
 
-        <Wrench className="ComingSoon__icon" />
-      </div>
+        <Wrench className="w-10 h-10 mx-auto text-[#203A2B]/70" />
+      </section>
 
-      <Link href={backHref} className="Back">
-        Tillbaka
-      </Link>
-    </div>
+      <BackButton />
+    </main>
   );
 }

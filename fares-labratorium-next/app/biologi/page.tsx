@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Dna } from "lucide-react";
+import BackButton from "../components/BackButton";
 
 export const metadata = {
   title: "Biologi - Makkis Vetenskapsrum",
@@ -7,22 +8,40 @@ export const metadata = {
 
 export default function BiologiPage() {
   return (
-    <div className="Biologi">
-      <h2 className="Biologi__h2">Kurser i Biologi</h2>
+    <main className="max-w-3xl mx-auto px-6 py-12 space-y-10">
 
-      <Link href="/biologi1" className="Subjects__biologi">
-        Biologi 1
-        <Dna className="Subjects__biologiIcon" />
-      </Link>
+      <section className="text-center">
+        <h2 className="text-4xl font-light text-[#f3f3f3]">
+          Biologi
+        </h2>
 
-      <Link href="/biologi2" className="Subjects__biologi">
-        Biologi 2
-        <Dna className="Subjects__biologiIcon" />
-      </Link>
+        <p className="text-[#f3f3f3] mt-2">
+          Välj en kurs nedan
+        </p>
+      </section>
 
-      <Link href="/" className="Back">
-        Tillbaka
-      </Link>
-    </div>
+      <section className="grid gap-6">
+
+        <Link
+          href="/biologi1"
+          className="group bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-xl shadow-md p-6 flex justify-between items-center hover:shadow-xl hover:-translate-y-1 transition"
+        >
+          <span className="text-xl font-light">Biologi 1</span>
+          <Dna className="group-hover:scale-110 transition" />
+        </Link>
+
+        <Link
+          href="/biologi2"
+          className="group bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-xl shadow-md p-6 flex justify-between items-center hover:shadow-xl hover:-translate-y-1 transition"
+        >
+          <span className="text-xl font-light">Biologi 2</span>
+          <Dna className="group-hover:scale-110 transition" />
+        </Link>
+
+        <BackButton/>
+
+      </section>
+
+    </main>
   );
 }
