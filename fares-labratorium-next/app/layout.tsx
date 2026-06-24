@@ -7,7 +7,6 @@ import Header from "./components/Header";
 
 import Footer from "./components/Footer";
 
-
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
@@ -50,11 +49,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body className={poppins.className}>
+      <body
+        className={`${poppins.className} bg-gradient-to-r from-[#14281D] via-[#203A2B] to-[#2F4F3E]`}
+      >
+        {" "}
         <Header />
-
         {children}
-
         <Footer />
       </body>
     </html>
