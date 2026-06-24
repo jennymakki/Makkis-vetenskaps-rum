@@ -1,47 +1,29 @@
 import Link from "next/link";
 import { Leaf } from "lucide-react";
 
-import LessonCard from "../components/LessonCard";
-
 export const metadata = {
   title: "Naturkunskap - Makkis Vetenskapsrum",
 };
 
-const sections = [
-  {
-    title: "Naturkunskap 1a1",
-    icon: Leaf,
-    theme: "theme-natur",
-    files: [],
-  },
-  {
-    title: "Naturkunskap 1b",
-    icon: Leaf,
-    theme: "theme-natur",
-    files: [],
-  },
-  {
-    title: "Naturkunskap 2",
-    icon: Leaf,
-    theme: "theme-natur",
-    files: [],
-  },
-];
-
 export default function NaturkunskapPage() {
   return (
     <div className="Naturkunskap">
-      <h2 className="Naturkunskap__h2">Kurser i Naturkunskap</h2>
+      <h2 className="Naturkunskap__h2">Kurser i Kemi</h2>
 
-      {sections.map((section) => (
-        <LessonCard
-          key={section.title}
-          title={section.title}
-          Icon={section.icon}
-          files={section.files}
-          themeClass={section.theme}
-        />
-      ))}
+          <Link href="/naturkunskap1a1" className="Subjects__naturkunskap">
+        Naturkunskap 1a1
+        <Leaf className="Subjects__naturkunskapIcon" />
+      </Link>
+
+      <Link href="/naturkunskap1b" className="Subjects__naturkunskap">
+        Naturkunskap 1b
+        <Leaf className="Subjects__kemiIcon" />
+      </Link>
+
+      <Link href="/naturkunskap2" className="Subjects__naturkunskap">
+        Naturkunskap 2
+        <Leaf className="Subjects__naturkunskapIcon" />
+      </Link>
 
       <Link href="/" className="Back">
         Tillbaka

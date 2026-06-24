@@ -36,7 +36,7 @@ export default function HomePage() {
             </button>
           </Link>
 
-          <Link href="/naturvetenskapligspecialisering">
+          <Link href="/natspec">
             <button className="Subjects__naturspec">
               Naturvetenskaplig Specialisering{" "}
               <Atom className="Subjects__naturspecIcon" />
